@@ -10,7 +10,7 @@ output: html_document
 ```{r load-packages, message=FALSE, echo=TRUE}
 library(tidyverse)
 library(tidymodels)
-
+library(ggplot2)
 ```
 
 ## Data set: college recent grads
@@ -26,7 +26,15 @@ glimpse(college_grad_df)
 # Exercise 1: Exploratory Data Analysis
 
 ```{r}
-#your code here
+college_grad_df %>%
+  
+  ggplot(aes(x = median)) +
+  geom_histogram( bins = 173, binwidth = 2500) +
+    labs(
+      title = "Which major category has the highest median earnings?",
+      x = "Major",
+      y = "Median"
+    )
 ```
 
 *Your explanation*
