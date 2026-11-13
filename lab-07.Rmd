@@ -52,6 +52,17 @@ college_grad_df %>%
 
 ```{r}
 #your code here
+
+
+
+
+
+
+
+
+
+
+
 ```
 
 *Your explanation*
@@ -60,6 +71,13 @@ college_grad_df %>%
 
 ```{r}
 #your code here
+
+
+
+
+
+
+
 ```
 
 *Your explanation*
